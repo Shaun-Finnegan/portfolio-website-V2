@@ -4,12 +4,54 @@
     box-sizing: border-box;
 }
 
+body{
+    background: black;
+}
+
+.container{
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.text{
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    color:white;
+    border-right: 5px solid white;
+    animation: type 5s steps(13) infinite, cursor 0.7s infinite step-end;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes cursor{
+    0%, 100% {border-color: transparent;}
+    50%{border-color: white;}
+
+
+}
+
+@keyframes type{
+    0% {width:0ch;}
+    30% {width: 17ch;}
+    80% {width: 17ch;}
+    90% {width: 17ch;}
+    100% {width: 0ch;}
+}
+
+
+
 #canvas1{
     position:absolute;
-    background: black;
-    width: 100%;
-    height: 100%;
+    border: 1px solid white;
+    width: 600px;
+    height: 700px;
     top: 0;
     left: 0;
 }
+
+
+
+
 
