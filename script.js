@@ -26,7 +26,7 @@ function drawFlower(){
    let angle = number * 20;
    let radius = scale * Math.sqrt(number);
    let positionX = radius * Math.sin(angle) + 300;
-   let positionY = radius * Math.cos(angle) + 300;
+   let positionY = radius * Math.cos(angle) + 350;
     ctx.fillStyle = 'hsl(' + hue + ', 100%, 50%)';
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 5;
