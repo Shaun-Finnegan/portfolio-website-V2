@@ -13,17 +13,17 @@ body{
 .wrapper{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows:  0.5fr 1fr 0.5fr;
     grid-template-areas:
-    'nav nav nav nav'
+    'logo nav nav nav'
     'canvas canvas text text'
     'footer footer footer footer';
     gap: 10px;
 }
 
 header{
-    grid-area: nav;
+
    text-align: center;
    background: black;
    position: fixed;
@@ -32,41 +32,55 @@ header{
 }
 
 .navbar{
-    background-color: black;
-    grid-area: navbar;
-    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: white;
     
 }
     
 nav ul{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-decoration: none;
     list-style-type: none;
+    text-align: center;
+
+}
+
+.navbar li{
     text-decoration: none;
+    list-style-type: none;
+   
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    font-size: 200%;
+    min-width: 100px;
+    font-size: 100%;
+
 }
 
-nav li{
-    font-size: 1.2em;
-    color: white;
-    border: 1px solid white;
-}
-
-nav a{
+.navbar a{
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    padding: 1rem;
+    display: block;
+    font-size: 1.5rem;
 }
 
-nav a:hover{
+.navbar a:hover{
     text-decoration: underline;
 }
 
 
 .logo{
-    color: white;
-    font-size: 250%;
-    font-family: 'Pacifico', cursive;
+   color: white;
+   font-size: 2rem;
 }
 
 .container{
@@ -84,6 +98,8 @@ nav a:hover{
     animation: type 5s steps(13) infinite, cursor 0.7s infinite step-end;
     white-space: nowrap;
     overflow: hidden;
+    margin-left: 0;
+    margin-top: 5%;
 }
 
 @keyframes cursor{
@@ -107,7 +123,7 @@ nav a:hover{
     grid-area: canvas;
     width: 100%;
     height: 100%;
-    background: green;
+    background: black;
     
     
 }
@@ -162,50 +178,15 @@ nav a:hover{
     margin-left: 5%;
 }
 
-@media screen and (min-width: 800px){
-    .nav-toggle-label{
-        display: none;
-    }
-
-    header{
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
-
-    .logo{
-        grid-column: 2 / span 1;
-    }
-
-    .navbar{
-        all: unset;
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav a{
-        opacity: 1;
-    }
-
-    nav ul{
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    nav li{
-        margin-left: 3em;
-        margin-bottom: 0;
-    }
-}
 
 @media screen and (max-width: 800px){
     .wrapper{
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr;
         grid-template-areas:
+        'logo'
         'nav'
         'canvas'
         'text'
@@ -213,34 +194,9 @@ nav a:hover{
         gap: 10px;
     }
 
-    .canvas{
-        margin-top: 20%;
-    }
-
-    .navbar{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-left: 2%;
-        list-style-type: none;
-        text-decoration: none;
-    }
-
-    .navbar li{
-        display: flex;
-        flex-wrap:wrap;
-        padding: 5%;
-    }
-
-
     .text{
+        letter-spacing: 2px;
         font-size: 2em;
-        letter-spacing: 4px;
-        text-align: center;
+        margin-left: 15%;
     }
 }
