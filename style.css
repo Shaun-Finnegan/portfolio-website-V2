@@ -240,9 +240,8 @@ header{
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
         grid-template-areas:
-        'logo'
         'nav'
         'canvas'
         'text'
