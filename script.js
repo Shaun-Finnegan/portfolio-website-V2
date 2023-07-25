@@ -1,4 +1,7 @@
 const canvas = document.getElementById('canvas1');
+const textDisplay = document.getElementById('text');
+const phrases = ['HI! Im Shaun.','I make beautiful.', 'Websites.'];
+let currentPhrase = [];
 const ctx = canvas.getContext('2d');
 canvas.width = 600;
 canvas.height = 700;
@@ -7,6 +10,7 @@ ctx.globalCompositeOperation = 'destination-over';
 let hue = 0;
 let number = 0;
 let scale = 10;
+
 
 
 
@@ -79,3 +83,47 @@ requestAnimationFrame(animate);
 };
 
 animate();
+
+let i = 0;
+ let j = 0;
+ let isDeleting = false;
+
+
+ function loop () {
+    
+    textDisplay.innerHTML = currentPhrase.join('')
+  
+    if (i < phrases.length) {
+  
+      if (!isDeleting && j <= phrases[i].length) {
+        currentPhrase.push(phrases[i][j])
+        j++
+        textDisplay.innerHTML = currentPhrase.join('')
+      }
+
+      if (isDeleting && j <= phrases[i].length){
+        currentPhrase.pop(phrases[i][j])
+        j--
+      }
+  
+      if (j == phrases[i].length) {
+        isDeleting = true;
+      }
+
+      if(isDeleting && j == 0){
+        currentPhrase = [];
+        isDeleting = false;
+        i++;
+        if( i == phrases.length){
+            i = 0;
+        }
+      }
+
+     
+
+    }
+    setTimeout(loop, 250);
+ };
+
+
+loop();

@@ -112,7 +112,15 @@ header{
     grid-area: text;
 }
 
-.text{
+#text{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+
+/*.text{
     font-size: 5em;
     letter-spacing: 10px;
     font-family: monospace;
@@ -141,7 +149,7 @@ header{
     90% {width: 17ch;}
     100% {width: 0ch;}
 }
-
+*/
 
 
 #canvas1{
@@ -253,9 +261,9 @@ header{
         font-size: 1.2em;
     }
 
-    .text{
-        letter-spacing: 2px;
+    #text{
+        
         font-size: 2em;
-        margin-left: 15%;
+        
     }
 }
