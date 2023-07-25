@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas1');
 const textDisplay = document.getElementById('text');
-const phrases = ['HI! Im Shaun.','I make beautiful.', 'Websites.'];
+const phrases = ['HI! Im Shaun.','I make beautiful.', 'Websites.', 'and', 'Generative Art.'];
 let currentPhrase = [];
 const ctx = canvas.getContext('2d');
 canvas.width = 600;
