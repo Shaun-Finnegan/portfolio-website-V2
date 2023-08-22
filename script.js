@@ -44,6 +44,8 @@ function drawFlower(){
     hue++;
 };
 
+
+
 class Line{
     constructor(canvas){
         this.canvas = canvas;
