@@ -120,37 +120,6 @@ header{
 }
 
 
-/*.text{
-    font-size: 5em;
-    letter-spacing: 10px;
-    font-family: monospace;
-    color:white;
-    border-right: 5px solid white;
-    animation: type 5s steps(13) infinite, cursor 0.7s infinite step-end;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 0;
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@keyframes cursor{
-    0%, 100% {border-color: transparent;}
-    50%{border-color: white;}
-
-
-}
-
-@keyframes type{
-    0% {width:0ch;}
-    30% {width: 17ch;}
-    80% {width: 17ch;}
-    90% {width: 17ch;}
-    100% {width: 0ch;}
-}
-*/
-
 
 #canvas1{
     grid-area: canvas;
@@ -159,6 +128,12 @@ header{
     background: black;
     
     
+}
+
+#canvas2{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
 }
 
 .footer {
