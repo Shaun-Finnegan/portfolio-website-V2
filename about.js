@@ -4,16 +4,16 @@ canvas2.width = window.innerWidth;
 canvas2.height = window.innerHeight;
 
 // global effects
-ctx2.strokeStyle = 'yellow';
 ctx2.fillStyle='green';
-ctx2.lineWidth = 30;
+ctx2.lineWidth = 10;
 ctx2.lineCap = 'round';
 let size = 200;
-let sides = 5;
+let sides = 7;
 let maxLevel = 3;
 let scale = 0.5;
-let spread = 0.5;
+let spread = 2;
 let branches = 2;
+let color = 'hsl('+ Math.random() * 360 +' , 100%, 50%)'
 
 
 
@@ -49,9 +49,9 @@ function drawBranch(level){
 
 function drawFractal(){
     ctx2.save();
+    ctx2.strokeStyle = color;
     ctx2.translate(canvas2.width/2, canvas2.height/2);
-    ctx2.scale(1, 1);
-    ctx2.rotate(0);
+ 
     for(let i = 0; i < sides; i++){
    
         ctx2.rotate((Math.PI * 2)/ sides);
