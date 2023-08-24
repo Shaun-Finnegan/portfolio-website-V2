@@ -188,28 +188,190 @@ header{
     cursor:pointer;
 }
 
+
+.projects_title_container{
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.projects_title{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
 .card{
-    width: 400px;
-    background: pink;
+    width: 100%;
+    margin-bottom: 1em;
+
+    
 }
 
 .card:hover .card_content{
-   transform: rotate(90deg);
+   transform: rotateY(.5turn);
+  
 }
 
 .card_content{
     text-align: center;
     color: white;
     position: relative;
+    transition: transform 3s;
+    padding : 5em;
+    background: pink;
+    transform-style: preserve-3d;
+   
 }
 
-.card_front
+.card_front,
 .card_back{
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    padding: 2em;
+    backface-visibility: hidden;
+}
+
+.card_title{
+    font-size: 3rem;
+    transform: translatez(5rem);
+    
+}
+
+.card_back{
+    transform: rotateY(.5turn);
+}
+
+.card2{
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.card2:hover .card_content2{
+   transform: rotateY(.5turn);
+  
+}
+
+.card_content2{
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 3s;
+    padding : 5em;
+    background: green;
+    transform-style: preserve-3d;
+   
+}
+
+.card_front2,
+.card_back2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    backface-visibility: hidden;
+}
+
+.card_title2{
+    font-size: 3rem;
+    transform: translatez(5rem);
+    
+}
+
+.card_back2{
+    transform: rotateY(.5turn);
+}
+
+.card3{
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.card3:hover .card_content3{
+   transform: rotateY(.5turn);
+  
+}
+
+.card_content3{
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 3s;
+    padding : 5em;
+    background: blue;
+    transform-style: preserve-3d;
+   
+}
+
+.card_front3,
+.card_back3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    backface-visibility: hidden;
+}
+
+.card_title3{
+    font-size: 3rem;
+    transform: translatez(5rem);
+    
+}
+
+.card_back3{
+    transform: rotateY(.5turn);
+}
+
+.card4{
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.card4:hover .card_content4{
+   transform: rotateY(.5turn);
+  
+}
+
+.card_content4{
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 3s;
+    padding : 5em;
+    background: purple;
+    transform-style: preserve-3d;
+   
+}
+
+.card_front4,
+.card_back4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    backface-visibility: hidden;
+}
+
+.card_title4{
+    font-size: 3rem;
+    transform: translatez(5rem);
+    
+}
+
+.card_back4{
+    transform: rotateY(.5turn);
 }
 
 
