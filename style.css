@@ -169,6 +169,26 @@ header{
 }
 
 
+.portfolio-button-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolio-button{
+    border-radius: 100vw;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.portfolio-button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor:pointer;
+}
+
+
 
 .footer {
     background-color: black;
