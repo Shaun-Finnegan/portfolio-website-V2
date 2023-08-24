@@ -188,6 +188,29 @@ header{
     cursor:pointer;
 }
 
+.card{
+    width: 400px;
+    background: pink;
+}
+
+.card:hover .card_content{
+   transform: rotate(90deg);
+}
+
+.card_content{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.card_front
+.card_back{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 
 
 .footer {
