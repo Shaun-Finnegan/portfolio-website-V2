@@ -278,6 +278,9 @@ header{
     float: right;
     margin-left: 1em;
     margin-top: 0;
+    height: 100%;
+    width: 505;
+
 }
 
 .card2:hover .card_content2{
@@ -385,6 +388,8 @@ header{
     float: right;
     margin-left: 1em;
     margin-top: 0;
+    height: 100%;
+    width: 50%;
 }
 
 .card_content4{
