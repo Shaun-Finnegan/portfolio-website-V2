@@ -235,7 +235,8 @@ header{
     position: relative;
     transition: transform 3s;
     padding : 5em;
-    background: pink;
+    background: black;
+    border: 1px solid white;
     transform-style: preserve-3d;
    
 }
@@ -261,11 +262,22 @@ header{
     transform: rotateY(.5turn);
 }
 
+.card1-img{
+    float: left;
+    margin-right: 1em;
+}
+
 .card2{
     width: 100%;
     margin-bottom: 1em;
     grid-area: card2;
     
+}
+
+.card2-img{
+    float: right;
+    margin-left: 1em;
+    margin-top: 0;
 }
 
 .card2:hover .card_content2{
@@ -279,7 +291,8 @@ header{
     position: relative;
     transition: transform 3s;
     padding : 5em;
-    background: green;
+    background: black;
+    border: 1px solid white;
     transform-style: preserve-3d;
    
 }
@@ -317,13 +330,20 @@ header{
   
 }
 
+.card3-img{
+    float: left;
+    margin-left: 1em;
+    margin-top: 0;
+}
+
 .card_content3{
     text-align: center;
     color: white;
     position: relative;
     transition: transform 3s;
     padding : 5em;
-    background: blue;
+    background: black;
+    border: 1px solid white;
     transform-style: preserve-3d;
    
 }
@@ -361,13 +381,20 @@ header{
   
 }
 
+.card4-img{
+    float: right;
+    margin-left: 1em;
+    margin-top: 0;
+}
+
 .card_content4{
     text-align: center;
     color: white;
     position: relative;
     transition: transform 3s;
     padding : 5em;
-    background: purple;
+    background: black;
+    border: 1px solid white;
     transform-style: preserve-3d;
    
 }
