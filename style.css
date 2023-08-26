@@ -144,6 +144,20 @@ header{
 
 }
 
+.wrapper-projects{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows:  0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    'nav nav nav nav'
+    'project-title project-title project-title project-title'
+    'card1 card1 card2 card2'
+    'card3 card3 card4 card4'
+    'footer footer footer footer';
+    gap: 10px;
+}
+
 #canvas2{
     background-color:black;
     width: 100%;
@@ -192,6 +206,7 @@ header{
 .projects_title_container{
     width: 100%;
     margin-bottom: 1em;
+    grid-area: project-title;
     
 }
 
@@ -204,6 +219,7 @@ header{
 .card{
     width: 100%;
     margin-bottom: 1em;
+    grid-area: card1;
 
     
 }
@@ -248,6 +264,7 @@ header{
 .card2{
     width: 100%;
     margin-bottom: 1em;
+    grid-area: card2;
     
 }
 
@@ -291,6 +308,7 @@ header{
 .card3{
     width: 100%;
     margin-bottom: 1em;
+    grid-area: card3;
     
 }
 
@@ -334,6 +352,7 @@ header{
 .card4{
     width: 100%;
     margin-bottom: 1em;
+    grid-area: card4;
     
 }
 
