@@ -457,6 +457,39 @@ header{
 }
 
 
+.blog_card{
+    color: white;
+    background-image: url('assets/images/furever-friends-image-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+}
+
+.blog_card_content{
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0), 
+        hsl(20 0% 0% /.3) 20%,
+        hsl(0 0 0% / 1)
+    );
+}
+
+.blog_card_title{
+    position: relative;
+    width: 100%;
+}
+
+.blog_card_title::after{
+       content:'';
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       background: green;
+       height: 3px;
+       width: 100%;
+}
+
 .footer {
     background-color: black;
     grid-area: footer;
