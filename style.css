@@ -220,6 +220,7 @@ header{
     width: 100%;
     margin-bottom: 1em;
     grid-area: card1;
+    
 
     
 }
@@ -250,6 +251,16 @@ header{
     left: 0;
     padding: 2em;
     backface-visibility: hidden;
+}
+
+.card_front{
+    background-image: url('assets/images/project 1 screenshot.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.front-content{
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .card_title{
@@ -309,6 +320,13 @@ header{
     left: 0;
     padding: 2em;
     backface-visibility: hidden;
+    
+}
+
+.card_front2{
+    background-image: url('assets/images/nh-photography.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 
 .card_title2{
@@ -362,6 +380,12 @@ header{
     backface-visibility: hidden;
 }
 
+.card_front3{
+    background-image: url('assets/images/furever-friends-image.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
 .card_title3{
     font-size: 3rem;
     transform: translatez(5rem);
@@ -413,6 +437,13 @@ header{
     left: 0;
     padding: 2em;
     backface-visibility: hidden;
+}
+
+
+.card_front4{
+    background-image: url('assets/images/bad buck image.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 
 .card_title4{
