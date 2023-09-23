@@ -6,8 +6,8 @@
 }
 
 body{
-    background: black;
     overflow-x: hidden;
+    background-image: url('assets/images/bg-for-website.jpg');
 }
 
 .wrapper{
@@ -114,7 +114,7 @@ header{
 
 #text{
     font-size: 3em;
-    color: white;
+    color: black;
     text-align: center;
     font-family: monospace;
 }
@@ -125,7 +125,7 @@ header{
     grid-area: canvas;
     width: 100%;
     height: 100%;
-    background: black;
+    
     
     
 }
@@ -159,7 +159,7 @@ header{
 }
 
 #canvas2{
-    background-color:black;
+    
     width: 100%;
     height: 100%;
     grid-area: canvas-about;
@@ -475,6 +475,35 @@ header{
     padding: 1rem;
     border: 1px solid yellow;
     border-radius: .25rem;
+    width: 100%;
+    margin: 2%;
+}
+
+.blog-card2{
+    background: white;
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-radius: .25rem;
+    width: 100%;
+    margin: 2%;
+}
+
+.blog-card3{
+    background: white;
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-radius: .25rem;
+    width: 100%;
+    margin: 2%;
+}
+
+.blog-card4{
+    background: white;
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-radius: .25rem;
+    width: 100%;
+    margin: 2%;
 }
 
 .blog-card-header{
@@ -485,6 +514,18 @@ header{
 .blog-card-footer{
     margin-top: 1rem;
 }
+
+.blog-button{
+    padding: .5em;
+    background: green;
+    border-radius: .25em;
+}
+
+.blog-button:hover{
+    background: rgb(43, 190, 43);
+}
+
+
 
 .footer {
     background-color: black;
