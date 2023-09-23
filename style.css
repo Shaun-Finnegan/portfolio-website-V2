@@ -457,37 +457,33 @@ header{
 }
 
 
-.blog_card{
-    color: white;
-    background-image: url('assets/images/furever-friends-image-small.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 8rem 0 0;
-    max-width: 35ch;
-}
-
-.blog_card_content{
-    padding: 1.5em;
-    background: linear-gradient(
-        hsl(0 0% 0% / 0), 
-        hsl(20 0% 0% /.3) 20%,
-        hsl(0 0 0% / 1)
-    );
-}
-
-.blog_card_title{
-    position: relative;
+.blog_title_container{
     width: 100%;
+    margin-bottom: 1em;
+    grid-area: project-title;
+    
 }
 
-.blog_card_title::after{
-       content:'';
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       background: green;
-       height: 3px;
-       width: 100%;
+.blog_title{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.blog-card{
+    background: white;
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-radius: .25rem;
+}
+
+.blog-card-header{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.blog-card-footer{
+    margin-top: 1rem;
 }
 
 .footer {
